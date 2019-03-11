@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+<table>
+<th *ngFor = "let item of header">
+    <tr>{{item}}</tr>
+</th>
+<tr *ngFor = "let item of value">
+    <td>{{item.userId}}</td>
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.body}}</td>
+</tr>
+</table>
+<button (click) = "getValue()">CLICK</button>
+</body>
+</html>
